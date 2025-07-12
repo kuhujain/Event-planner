@@ -23,7 +23,7 @@ const Login = () => {
           toast.success(res.data.message)
           setPassword("");
           setEmail("");
-          navigate("/UserDashboard")
+          navigate("/dashboard")
         }catch(error){
          toast.error(`Error : ${error.response?.status || error.message}| ${error.response?.data.message || " "}`)
         }

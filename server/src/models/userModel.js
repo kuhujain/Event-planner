@@ -18,6 +18,12 @@ const userSchema=mongoose.Schema( {
         type:String,
         required:true,
      },
+     photo:{
+      type:String,
+      required:true,
+      default:""
+     },
+     
     },
     {timestamps:true}
 );
